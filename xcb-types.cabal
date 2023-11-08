@@ -1,6 +1,6 @@
 Name:         xcb-types
-Version:      0.10.0
-Cabal-Version:  >= 1.6
+Version:      0.11.0
+Cabal-Version:  >= 1.10
 Synopsis:     Parses XML files used by the XCB project
 Description:   This package provides types which mirror the structures
   used in the XCB code generation XML files.
@@ -41,5 +41,6 @@ Library
                   Data.XCB.FromXML
 
  Other-modules:   Data.XCB.Utils
+ Default-Language: Haskell2010
 
  Ghc-Options:     -Wall

@@ -1,8 +1,12 @@
-haskell-xcb-types (0.10.0-deepin1) unstable; urgency=medium
+haskell-xcb-types (0.11.0-1) unstable; urgency=medium
 
-  * Rebuild
+  [ Ilias Tsitsimpis ]
+  * Declare compliance with Debian policy 4.6.1
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:42:50 +0800
+  [ Clint Adams ]
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Sat, 02 Jul 2022 14:38:42 -0400
 
 haskell-xcb-types (0.10.0-2) unstable; urgency=medium
 
