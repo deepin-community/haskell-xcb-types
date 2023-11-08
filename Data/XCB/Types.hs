@@ -102,6 +102,7 @@ data GenStructElem typ
     | Switch Name (Expression typ) (Maybe Alignment) [GenBitCase typ]
     | Doc (Maybe String) (Map Name String) [(String, String)]
     | Fd String
+    | Length typ (Expression typ)
  deriving (Show, Functor)
 
 data GenBitCase typ

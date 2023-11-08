@@ -17,7 +17,7 @@ Build-Depends:
 Build-Depends-Indep:
  ghc-doc,
  libghc-xml-doc,
-Standards-Version: 4.5.0
+Standards-Version: 4.6.1
 Homepage: http://community.haskell.org/~aslatter/code/xcb-types
 Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-xcb-types
 Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-xcb-types]

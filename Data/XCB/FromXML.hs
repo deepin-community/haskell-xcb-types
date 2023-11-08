@@ -28,9 +28,7 @@ import Data.List as List
 import qualified Data.Map as Map
 import Data.Maybe
 
-import Control.Applicative ((<$>))
 import Control.Monad
-import Control.Monad.Fail (MonadFail)
 import Control.Monad.Reader
 
 import System.IO (openFile, IOMode (ReadMode), hSetEncoding, utf8, hGetContents)
@@ -397,6 +395,11 @@ structField el
     | el `named` "fd" = do
         name <- el `attr` "name"
         return $ Fd name
+
+    | el `named` "length" = do
+        expr <- firstChild el >>= expression
+        let typ = mkType "CARD32"
+        return $ Length typ expr
 
     | otherwise = let name = elName el
                   in error $ "I don't know what to do with structelem "

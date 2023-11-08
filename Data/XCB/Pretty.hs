@@ -149,6 +149,8 @@ instance Pretty a => Pretty (GenStructElem a) where
                       ,text mname
                       ,text lname
                       ]
+    toDoc (Length _ expr)
+        = text "length" <+> parens (toDoc expr)
 
 
 instance Pretty a => Pretty (GenBitCase a) where
